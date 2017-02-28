@@ -327,6 +327,76 @@ white-space: pre;
 padding: 0;
 }
 
+.price{
+	padding-top: 90px;
+}
+
+.price-title{
+	margin: 0;
+	font-size: 32px;
+	position: relative;
+	margin-bottom: 70px;
+}
+
+.price-title:after{
+	content: '';
+  position: absolute;
+  left: 0px;
+  bottom: -20px;
+  background-color: #3e98d7;
+  height: 5px;
+  width: 60px;
+}
+.price-info-text{
+	font-size: 18px;
+	color: #444444;
+	margin-bottom: 35px;
+}
+
+.calculate-form-item{
+	margin-bottom: 20px;
+}
+.calculate-form-result{
+	margin-top: 30px;
+}
+
+.name-form{
+	color: #444444;
+	font-size: 18px;
+	display: inline-block;
+	margin-top: 10px;
+}
+.name-form-price{
+	font-weight: 600;
+}
+.form-items{
+	width: 355px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+	padding: 10px 15px;
+	float: right;
+	border-radius: 3px;
+}
+
+.form-btn{
+	float: right;
+	background-color: #46b0dc;
+	text-align: center;
+	color: #ffffff;
+	font-size: 18px;
+	padding: 10px 40px;
+	border: none;
+	border-radius: 3px;
+	margin-top: 10px;
+}
+.name-form-result{
+	color: #f97e7e;
+	font-size: 38px;
+	vertical-align: middle;
+	padding-left: 15px;
+}
+
 .payment-ask{
 padding-top: 75px;
 padding-bottom: 90px;
@@ -382,7 +452,7 @@ padding-bottom: 90px;
   width: 60px;
 }
 .ask-item{
-	padding-left: 60px;
+	/*padding-left: 60px;*/
 	margin-top: 40px;
 }
 .ask-item-ask{
@@ -631,9 +701,9 @@ padding-bottom: 75px;
 
 /*СПРАЙТЫ*/
 .sprite {
-    background-image: url(../img/);
+    background-image: url(../img/sprite.png);
     background-repeat: no-repeat;
-    display: block;
+    float: left;
 }
 
 .sprite-arrow-down-form {

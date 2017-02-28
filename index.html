@@ -102,21 +102,44 @@
 		<section class="price">
 			<div class="container">
 				<div class="row">
-					<div class="price-info column5">
+					<div class="column5">
 					<h2 class="price-title">Расчитать стоимость</h2>
 						<p class="price-info-text">Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полту - определяется направление ветра, запускаются горелки.</p>
 						<p class="price-info-text">Оболочка начинает заполняться теплым воздухом, и аэростат делает первый "вздох".</p>
 						<p class="price-info-text">Выбирайте, куда мы полетим сегодня!</p>
 					</div>
-					<div class="calculate-form column6 column-offset-1"> 
-						<form action="">
-							<span>Маршрут полета: </span><input type="text" placeholder="Сестрорецк-Парнас">
-							<span>Количество человек: </span><input type="text" placeholder="2">
-							<span>Имя и фамилия: </span> <input type="text" placeholder="Поля Фокус">
-							<span>Телефон: </span><input type="text" placeholder="89215674566">
-							<span>Стоимость: <b>9 000</b> </span>
-							<input type="submit" placeholder="Полетели!">
-						</form>
+					<div class="column6 column-offset-1"> 
+					<form action="">
+					<div class="calculate-form-item clearfix">
+							<span class="name-form">Маршрут полета: </span>
+							<input class="form-items" type="text" list="route">
+							<datalist id="route">
+								<option value="Сестрорецк-Парнас"></option>
+								<option value="Парнас-Сестрорецк"></option>
+							</datalist>
+							</div>
+					<div class="calculate-form-item clearfix">
+							<span class="name-form">Количество человек: </span>
+							<input class="form-items" type="text" list="number-people">
+							<datalist id="number-people">
+								<option value="1"></option>
+								<option value="2"></option>
+								<option value="3"></option>
+							</datalist>
+					</div>
+					<div class="calculate-form-item clearfix">
+							<span class="name-form">Имя и фамилия: </span>
+							<input class="form-items" type="text">
+					</div>
+					<div class="calculate-form-item clearfix">
+							<span class="name-form">Телефон: </span>
+							<input class="form-items" type="text">
+					</div>
+					<div class="calculate-form-result clearfix">
+							<span class="name-form name-form-price">Стоимость: <span class="name-form-result">9 000 P </span></span>
+							<input type="submit" class="form-btn" value="Полетели!">
+					</div>
+					</form>	
 					</div>
 				</div>
 			</div>
@@ -154,8 +177,11 @@
 							</p>
 						</div>
 						<div class="ask-item">
+						<div class="sprite sprite-ask-form">
+						</div>
 							<span class="ask-item-ask">Что если мы улетим не в ту сторону?</span>
-							<p class="ask-info">Каждый шар оснащен датчиками GPS, и все его перемещения фиксируются с точностью до метра, потеряться просто не получится. А наши пилоты такой ситуации не допустят вообще</p>
+							
+						<p class="ask-info">Каждый шар оснащен датчиками GPS, и все его перемещения фиксируются с точностью до метра, потеряться просто не получится. А наши пилоты такой ситуации не допустят вообще</p>
 						</div>
 						<div class="ask-item">
 							<span class="ask-item-ask">Что делать, если в полете станет плохо?</span>
