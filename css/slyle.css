@@ -235,12 +235,13 @@ width: 245px;
 height: 245px;
 }
 .how{
-	background-image: url(../img/green-mountain.png);
-	background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  padding-bottom: 230px;
-  text-align: center;
+	background-size: cover;
+	background: 
+	url(../img/mountain.png)no-repeat center ,
+	url(../img/green-mountain.png) no-repeat center;
+	    
+  	padding-bottom: 230px;
+  	text-align: center;
 }
 .mountain{
 	position: relative;
@@ -454,12 +455,15 @@ padding-bottom: 90px;
 .ask-item{
 	/*padding-left: 60px;*/
 	margin-top: 40px;
+
 }
 .ask-item-ask{
+	display: inline-block;
  	font-size: 18px;
  	color: #444444;
  	margin-top: 10px;
  	font-weight: 600;
+ 	padding-left: 60px;
 
 }
 
@@ -660,14 +664,15 @@ padding-bottom: 75px;
 	padding-left: 60px;
 	position: relative;
 	margin-top: 60px;
+	height: 50px;
+  	width: 35px;
 }
 .address-items:before{
   content: '';
   position: absolute;
   background-image: url();
   background-repeat: no-repeat;
-  height: 50px;
-  width: 35px;
+  
 }
 .address-items-item{
 	display: block;
@@ -701,10 +706,12 @@ padding-bottom: 75px;
 
 /*СПРАЙТЫ*/
 .sprite {
+    display: block;
     background-image: url(../img/sprite.png);
     background-repeat: no-repeat;
-    float: left;
 }
+ 
+
 
 .sprite-arrow-down-form {
     width: 11px;
@@ -719,9 +726,15 @@ padding-bottom: 75px;
 }
 
 .sprite-ask-form {
-    width: 40px;
-    height: 34px;
-    background-position: -47px -5px;
+	position: relative;
+	background-position: -47px -5px;
+}
+.sprite-ask-form:before{
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	
 }
 
 .sprite-ballon-form {
@@ -730,11 +743,13 @@ padding-bottom: 75px;
     background-position: -97px -5px;
 }
 
+
 .sprite-binoculars-form {
     width: 72px;
     height: 34px;
     background-position: -5px -80px;
 }
+
 
 .sprite-gallery-arrow {
     width: 19px;
