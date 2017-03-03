@@ -81,7 +81,7 @@ body {
 	font-weight: normal;
 	font-size: 22px;
 	color: #ffffff;
-	
+
 }
 .main-nav{
 	list-style-type: none;
@@ -112,7 +112,7 @@ body {
   background-position: center;
   padding-top: 190px;
   padding-bottom:100px;
-  
+
   text-align: center;
 }
 .promo-title{
@@ -236,10 +236,10 @@ height: 245px;
 }
 .how{
 	background-size: cover;
-	background: 
+	background:
 	url(../img/mountain.png)no-repeat center ,
 	url(../img/green-mountain.png) no-repeat center;
-	    
+
   	padding-bottom: 230px;
   	text-align: center;
 }
@@ -248,7 +248,7 @@ height: 245px;
 	margin-top: 225px;
 }
 .mountain-img{
-	
+
 
 }
 .how-title{
@@ -374,7 +374,7 @@ padding: 0;
 	width: 355px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	box-sizing: border-box;	
+	box-sizing: border-box;
 	padding: 10px 15px;
 	float: right;
 	border-radius: 3px;
@@ -494,7 +494,7 @@ padding-bottom: 90px;
 	margin-left: 80px;
 }
 .numbers-item:first-child{
-margin-left: 130px;	
+margin-left: 130px;
 }
 .numbers-item:last-child{
 	margin-right: 130px;
@@ -621,7 +621,7 @@ padding-bottom: 75px;
 	color: #444444;
 	text-align: center;
 }
- 
+
 
 .aircraft{
 	background-color: #337ba0;
@@ -672,7 +672,7 @@ padding-bottom: 75px;
   position: absolute;
   background-image: url();
   background-repeat: no-repeat;
-  
+
 }
 .address-items-item{
 	display: block;
@@ -705,15 +705,24 @@ padding-bottom: 75px;
 
 
 /*СПРАЙТЫ*/
-.sprite {
+/*fix*/
+.sprite{
+	position: relative;
+}
+/*fix*/
+
+.sprite:before {
+	content: '';
+	position: absolute;
     display: block;
     background-image: url(../img/sprite.png);
     background-repeat: no-repeat;
+		left: -20px;
 }
- 
 
 
-.sprite-arrow-down-form {
+
+.sprite-arrow-down-form:before {
     width: 11px;
     height: 9px;
     background-position: -5px -5px;
@@ -725,7 +734,7 @@ padding-bottom: 75px;
     background-position: -26px -5px;
 }
 
-.sprite-ask-form {
+.sprite-ask-form:before {
 	position: relative;
 	background-position: -47px -5px;
 }
@@ -734,7 +743,7 @@ padding-bottom: 75px;
 	content: "";
 	left: 0;
 	top: 0;
-	
+
 }
 
 .sprite-ballon-form {
@@ -744,7 +753,8 @@ padding-bottom: 75px;
 }
 
 
-.sprite-binoculars-form {
+.sprite-binoculars-form:before {
+	/*fix*/
     width: 72px;
     height: 34px;
     background-position: -5px -80px;
