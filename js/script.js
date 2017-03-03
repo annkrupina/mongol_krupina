@@ -6,7 +6,9 @@ $(document).ready(function(){
 	$(".owl-carousel").owlCarousel({
 		loop: true,
 		nav: true,
-		responsive : {
+        navText: ["<i class='owl-prev'>","<i class='owl-next'>"],
+		navText: ["<img src='img/gallery-arrow.png'>","<img src='img/gallery-arrow2.png'>"],
+        responsive : {
     
     0 : {
         items:1,
@@ -24,4 +26,17 @@ $(document).ready(function(){
     }
 }
 	});
+    $(function() {
+  $('select').selectric();
+});
+    (function($) {
+$(function() {
+
+  $('#up').click(function() {
+    $('html, body').animate({scrollTop: 0},500);
+    return false;
+  })
+
+})
+})
 });

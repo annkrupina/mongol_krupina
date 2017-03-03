@@ -7,6 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="css/slyle.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="selectric.css">
 </head>
 <body>
 	<header class="page-header">
@@ -16,8 +17,8 @@
 					<span class="logo-text">Монгольфьеркин и Ко</span>
 				</div>
 				<nav class="column8 column-offset-1">
-					<ul class="main-nav ">
-						<li ><a href="#" class="main-nav-item main-nav-active">Кто мы</a></li>
+					<ul class="main-nav">
+						<li ><a href="#" class="main-nav-item">Кто мы</a></li>
 						<li ><a href="#" class="main-nav-item">Фотографии</a></li>
 						<li ><a href="#" class="main-nav-item">План полета</a></li>
 						<li ><a href="#" class="main-nav-item">Заказать</a></li>
@@ -38,7 +39,7 @@
 		<div class="advantages">
 			<div class="container">
 				<ul class="advantages-list row"> <!-- advantages-list будет убирать маргины и падинги --> 
-					<li class="advantages-item sprite sprite-like-form  column3"><span class="advantages-text">Современный надежный шар</span></li>
+					<li class="advantages-item  column3 sprite sprite-like-form advantages-text"><span class="">Современный надежный шар</span></li>
 					<li class="advantages-item sprite sprite-glasses-form  column3"><span class="advantages-text">Обучение пилотированию</span></li>
 					<li class="advantages-item sprite sprite-photo-form column3"><span class="advantages-text">Фотосъемка в полете</span></li>
 					<li class="advantages-item sprite sprite-binoculars-form column3"><span class="advantages-text">Потрясающие виды</span></li> <!-- advantages-item- псевдоэлементы тобы поставить спрайт -->
@@ -78,7 +79,7 @@
 			</div>
 		</section>
 <section class="how">
-<div class="container">
+<div class="container clearfix">
 	<h2 class="how-title">Как проходят полеты</h2>
 	<div class="mountain">
 	<span class="mountain-items mountain-items-1 sprite sprite-ballon-form ">Взлет</span>
@@ -112,28 +113,29 @@
 					<form action="">
 					<div class="calculate-form-item clearfix">
 							<span class="name-form">Маршрут полета: </span>
-							<input class="form-items" type="text" list="route">
-							<datalist id="route">
-								<option value="Сестрорецк-Парнас"></option>
-								<option value="Парнас-Сестрорецк"></option>
-							</datalist>
+							<select class="form-items">
+								<option value="Сестрорецк-Парнас">Сестрорецк-Парнас</option>
+								<option value="Парнас-Сестрорецк">Парнас-Сестрорецк</option>
+							<select class="form-items">
+							</select >
 							</div>
 					<div class="calculate-form-item clearfix">
 							<span class="name-form">Количество человек: </span>
-							<input class="form-items" type="text" list="number-people">
-							<datalist id="number-people">
-								<option value="1"></option>
-								<option value="2"></option>
-								<option value="3"></option>
-							</datalist>
+							<select class="form-items">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+							</select>
 					</div>
 					<div class="calculate-form-item clearfix">
 							<span class="name-form">Имя и фамилия: </span>
-							<input class="form-items" type="text">
+							<input class="form-items" type="text" style="background: url(img/human-form.png); background-repeat: no-repeat; 
+							background-position: 10px 10px">
 					</div>
 					<div class="calculate-form-item clearfix">
 							<span class="name-form">Телефон: </span>
-							<input class="form-items" type="text">
+							<input class="form-items" type="text" style="background: url(img/phone-form.png); background-repeat: no-repeat; 
+							background-position: 10px 10px">
 					</div>
 					<div class="calculate-form-result clearfix">
 							<span class="name-form name-form-price">Стоимость: <span class="name-form-result">9 000 P </span></span>
@@ -273,13 +275,15 @@
 				<span class="address-phone">746-67-33</span>
 			</div>
 			<div class="address-mail sprite sprite-mail-form column4">
-				<a href="">mnebyvnet@gmail.com</a>
-				<a href="">
-					<img src="" alt=""></a>
-				<a href="">
-				<img src="" alt=""></a>
-				<a href="">
-				<img src="" alt=""></a>
+				<a href="" class="address-link-mail">mnebyvnet@gmail.com</a>
+				<div class="address-logo-network">
+				<a href="https://vk.com/">
+					<img src="img/vk_logo.png" alt="" class="address-logo-img" ></a>
+				<a href="https://ru-ru.facebook.com/">
+					<img src="img/Facebook-icon.png" alt="" class="address-logo-img"></a>
+				<a href="https://www.instagram.com/">
+					<img src="img/instagram-logo.png" alt="" class="address-logo-img"></a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -287,6 +291,10 @@
 
 	</main>
 	<footer class="page-footer">
+
+	<a href="#" id="up">
+		<img src="img/footer.png" alt="">
+	</a>
 		<div class="container">
 			<div class="row">
 				<div class="logo column3">
@@ -310,6 +318,7 @@
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/jquery-migrate-1.4.1.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script src="jquery.selectric.min.js"></script>
 <script src="js/jquery.countdown.js"></script>
 <script src="js/script.js"></script>
 </html>
