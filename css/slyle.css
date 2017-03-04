@@ -2,6 +2,10 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
+	width: 1200px;
+}
+*{
+	outline: 0;
 }
 .clearfix:after {
   content: "";
@@ -93,13 +97,14 @@ body {
 	color: #ffffff;
 	text-decoration: none;
 	float: left;
+	border: 2px solid #2c2c2c;
+	padding: 10px 5px;
 	margin-left: 15px;
 	margin-top: 10px;
 }
 .main-nav-item:hover{
-	margin-left: 0;
-	border: 2px solid #ffffff;
-	padding: 10px 5px;
+		border-color: #ffffff;
+	
 }
 .promo{
 	background-image: url(../img/ballon-promo.png);
@@ -230,12 +235,9 @@ color: #444444;
 }
 .gallery-items{
 margin-top: 85px;
-padding-left: 58px;
-padding-right: 58px;
 }
 .gallery_item{
 	display: inline-block;
-	margin-left: 10px;
 }
 .gallery_item:first-child{
 	margin-left: 0;
@@ -247,7 +249,7 @@ height: 245px;
 .how{
 	background-size: cover;
 	background: 
-	url(../img/mountain.png)no-repeat 230px 250px,
+	url(../img/mountain.png)no-repeat center,
 	url(../img/green-mountain.png) no-repeat center;
   	padding-bottom: 100px;
 }
@@ -286,32 +288,32 @@ height: 245px;
 	content: "";
 	position: absolute;
 	left: 10px;
-	top: -100px;
+	top: -200px;
 }
 .mountain-items-2{
 	content: "";
 	position: absolute;
 	left: 270px;
-	top: -200px;
+	top: -250px;
 }
 .mountain-items-3{
 	content: "";
 	position: absolute;
 	left: 540px;
-	top: -300px;
+	top: -350px;
 }
 .mountain-items-4{
 	content: "";
 	position: absolute;
 	right: 270px;
-	top: -200px;
+	top: -250px;
 }
 
 .mountain-items-5{
 	content: "";
 	position: absolute;
 	right:  10px;
-	top: -100px;
+	top: -200px;
 }
 
 
@@ -389,6 +391,7 @@ padding: 0;
 	padding: 10px 15px;
 	float: right;
 	border-radius: 3px;
+	height: 40px;
 }
 
 .form-btn{
@@ -761,18 +764,52 @@ bottom: 20px;
     top: 10px;
 }
 
-.sprite-ballon-form:after{
-	content: "";
+.sprite-ballon-form:nth-child(1):after{
+	content: "1";
+	color: #ffffff;
 	position: relative;
     width: 44px;
     height: 65px;
     background-position: -97px -5px;
     top: 10px;
-   
+   }
 
+.sprite-ballon-form:nth-child(2):after{
+	content: "2";
+	color: #ffffff;
+	position: relative;
+    width: 44px;
+    height: 65px;
+    background-position: -97px -5px;
+    top: 10px;
 }
-
-
+.sprite-ballon-form:nth-child(3):after{
+	content: "3";
+	color: #ffffff;
+	position: relative;
+    width: 44px;
+    height: 65px;
+    background-position: -97px -5px;
+    top: 10px;
+}
+.sprite-ballon-form:nth-child(4):after{
+	content: "4";
+	color: #ffffff;
+	position: relative;
+    width: 44px;
+    height: 65px;
+    background-position: -97px -5px;
+    top: 10px;
+}
+.sprite-ballon-form:nth-child(5):after{
+	content: "5";
+	color: #ffffff;
+	position: relative;
+    width: 44px;
+    height: 65px;
+    background-position: -97px -5px;
+    top: 10px;
+}
 .sprite-binoculars-form:before{
 	content: "";
 	position: relative;
@@ -860,13 +897,21 @@ bottom: 20px;
 .gallery .container{
 	position: relative;
  }
-.owl-prev{
+.owl-next, .owl-prev{
 position: absolute;
-top: 50%;
-left: -10px;
+top: 60%;
+}
+
+.owl-prev{
+	left: -10px;
 }
 .owl-next{
+	right: 30px;
+}
+
+.how-number{
+	color: #ffffff;
 	position: absolute;
-
-
+	left: 30px;
+	top: 50px;
 }
