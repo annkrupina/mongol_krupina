@@ -1,18 +1,14 @@
-$(document).ready(function(){ 
-    $(".owl-carousel").slick({
-  infinite: true,
-  slidesToShow: 4,
-  slidesToScroll: 4
-});
+$(document).ready(function(){
 
-	
-   */ $(".owl-carousel").owlCarousel({
-        loop: true,
-        nav: true,
-        items: 4,
-        navText: ["<img src='img/gallery-arrow.png'>","<img src='img/gallery-arrow2.png'>"],
-    });*/
-
+    $('.gallery-items').slick({
+       infinite: true,
+       slidesToShow: 4,
+       slidesToScroll: 4,
+       arrows: true,
+       prevArrow: $('.gallery-prev'),
+       nextArrow: $('.gallery-next'),
+     });
+ 
 
     $(function() {
   $('select').selectric();
